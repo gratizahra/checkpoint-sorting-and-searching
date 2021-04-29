@@ -1,12 +1,12 @@
 FUNCTION insert_sort(arr : ARRAY_OF INTEGER) : INTEGER{
-  var i,j,srt;
+  var i,j,X;
     for(i=1;i<arr.length;i++)
-    srt=arr[i]
+    X=arr[i]
      j=i-1;
-    while (j>=0 && arr[j]>srt)
+    while (j>=0 && arr[j]>X)
     arr[j+1]=arr[j];
     j--;
-    arr[j+1]=srt;
+    End while;
+    End For;
+    arr[j+1]=X;
     return arr;
-
-}
